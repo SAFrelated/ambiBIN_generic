@@ -1,0 +1,4 @@
+LIBRARY "ambiBIN_generic"
+
+EXPORTS
+  AkCreatePlugin

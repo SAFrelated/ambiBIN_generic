@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Spatial_Audio_Framework">
+      <UniqueIdentifier>{3C8C266B-289C-D23B-9155-375A7D84C1D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\examples">
+      <UniqueIdentifier>{6A5D14A8-D616-7F52-5F76-992CCB2E35C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\examples\include">
+      <UniqueIdentifier>{DD4E35E7-49B4-C86D-D28C-6A463EF1BDDC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\examples\src">
+      <UniqueIdentifier>{81C0942C-ED4F-5617-F64B-372F625A9123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\examples\src\ambi_bin">
+      <UniqueIdentifier>{A189D123-8D32-3953-B6C8-54D2A2D05394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework">
+      <UniqueIdentifier>{D9A3D094-C58A-928C-6EDB-F8A95AA10BF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\include">
+      <UniqueIdentifier>{4C94CC58-38A7-CCB1-E190-A99ECD8269FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\modules">
+      <UniqueIdentifier>{C191218F-ADA4-21E8-568E-FED44280BE35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\modules\saf_cdf4sap">
+      <UniqueIdentifier>{6E6A5E2C-5A3F-A6DF-83EE-E5DB6F22B4F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\modules\saf_hoa">
+      <UniqueIdentifier>{412C234C-2D6B-CDC7-D6ED-A9F9C20B8332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\modules\saf_hrir">
+      <UniqueIdentifier>{9EC288D0-0ADF-7AC1-D3B6-E72E3F92E482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\modules\saf_reverb">
+      <UniqueIdentifier>{8F32332C-FB19-1E22-0408-209E706EC1E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\modules\saf_sh">
+      <UniqueIdentifier>{44317DBC-B042-2563-3994-B7A2A5A4AE9C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\modules\saf_sofa_reader">
+      <UniqueIdentifier>{24BBA6DE-1026-67EA-B941-CC4FA58B2ACD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\modules\saf_utilities">
+      <UniqueIdentifier>{65FD641B-51BD-F5BF-BADA-DDCAA6B908D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\modules\saf_vbap">
+      <UniqueIdentifier>{D22A90D0-3E47-82C1-071F-EF2E73FAEB82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\resources">
+      <UniqueIdentifier>{A34CFD5E-8FCA-4DF8-78C2-0B9064DF8F20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\resources\afSTFT">
+      <UniqueIdentifier>{3A991405-A6B5-06F6-6F8D-7363DB6870B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\resources\convhull_3d">
+      <UniqueIdentifier>{F39B3325-DF5B-C4C9-4879-ACD43458D7DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\resources\kissFFT">
+      <UniqueIdentifier>{4CA8C1B2-3852-F7C1-2123-FFDC0D6C97B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\resources\libsamplerate">
+      <UniqueIdentifier>{F7ADB73B-E318-7847-8C34-DDAC787E3B2A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\framework\resources\md_malloc">
+      <UniqueIdentifier>{DAD2EEA5-C6A7-3659-EF56-7655DB8A4470}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Spatial_Audio_Framework\examples\include\_common.h">
+      <Filter>Spatial_Audio_Framework\examples\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\examples\include\ambi_bin.h">
+      <Filter>Spatial_Audio_Framework\examples\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\examples\src\ambi_bin\ambi_bin_internal.h">
+      <Filter>Spatial_Audio_Framework\examples\src\ambi_bin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\include\saf.h">
+      <Filter>Spatial_Audio_Framework\framework\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_cdf4sap\saf_cdf4sap.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_cdf4sap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_hoa\saf_hoa.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_hoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_hoa\saf_hoa_internal.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_hoa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_hrir\saf_hrir.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_hrir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_hrir\saf_hrir_internal.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_hrir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_reverb\saf_reverb.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_reverb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_reverb\saf_reverb_internal.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_reverb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_sh\saf_sh.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_sh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_sh\saf_sh_internal.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_sh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_sofa_reader\saf_sofa_reader.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_sofa_reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utilities.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_bessel.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_complex.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_decor.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_error.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_fft.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_filters.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_geometry.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_latticeCoeffs.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_loudspeaker_presets.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_matrixConv.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_misc.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_pitch.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_qmf.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_sensorarray_presets.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_sort.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_veclib.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_vbap\saf_vbap.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_vbap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_vbap\saf_vbap_internal.h">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_vbap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\afSTFT\afSTFT_internal.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\afSTFT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\afSTFT\afSTFT_protoFilter.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\afSTFT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\afSTFT\afSTFTlib.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\afSTFT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\convhull_3d\convhull_3d.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\convhull_3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\kissFFT\_kiss_fft_guts.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\kissFFT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\kissFFT\kiss_fft.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\kissFFT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\kissFFT\kiss_fftr.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\kissFFT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\common.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\fastest_coeffs.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\high_qual_coeffs.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\mid_qual_coeffs.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\samplerate.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\samplerate_interface.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\src_config.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\md_malloc\md_malloc.h">
+      <Filter>Spatial_Audio_Framework\framework\resources\md_malloc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ambiBIN_genericConfig.h">
+    </ClInclude>
+    <ClInclude Include="ambiBIN_genericFX.h" />
+    <ClInclude Include="ambiBIN_genericFXParams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Spatial_Audio_Framework\examples\src\ambi_bin\ambi_bin.c">
+      <Filter>Spatial_Audio_Framework\examples\src\ambi_bin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\examples\src\ambi_bin\ambi_bin_internal.c">
+      <Filter>Spatial_Audio_Framework\examples\src\ambi_bin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_cdf4sap\saf_cdf4sap.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_cdf4sap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_hoa\saf_hoa.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_hoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_hoa\saf_hoa_internal.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_hoa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_hrir\saf_default_hrirs.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_hrir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_hrir\saf_hrir.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_hrir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_hrir\saf_hrir_internal.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_hrir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_reverb\saf_reverb.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_reverb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_reverb\saf_reverb_internal.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_reverb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_sh\saf_sh.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_sh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_sh\saf_sh_internal.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_sh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_sofa_reader\saf_sofa_reader.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_sofa_reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_bessel.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_complex.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_decor.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_error.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_fft.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_filters.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_geometry.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_latticeCoeffs.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_loudspeaker_presets.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_matrixConv.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_misc.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_pitch.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_qmf.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_sensorarray_presets.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_sort.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_veclib.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_vbap\saf_vbap.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_vbap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_vbap\saf_vbap_internal.c">
+      <Filter>Spatial_Audio_Framework\framework\modules\saf_vbap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\afSTFT\afSTFT_internal.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\afSTFT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\afSTFT\afSTFTlib.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\afSTFT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\convhull_3d\convhull_3d.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\convhull_3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\kissFFT\kiss_fft.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\kissFFT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\kissFFT\kiss_fftr.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\kissFFT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\samplerate.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\samplerate_interface.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\src_linear.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\src_sinc.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\src_zoh.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\libsamplerate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\md_malloc\md_malloc.c">
+      <Filter>Spatial_Audio_Framework\framework\resources\md_malloc</Filter>
+    </ClCompile>
+    <ClCompile Include="ambiBIN_genericFX.cpp" />
+    <ClCompile Include="ambiBIN_genericFXParams.cpp" />
+  </ItemGroup>
+</Project>

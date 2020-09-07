@@ -1,0 +1,904 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug(StaticCRT)|Win32">
+      <Configuration>Debug(StaticCRT)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug(StaticCRT)|x64">
+      <Configuration>Debug(StaticCRT)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_EnableAsserts|Win32">
+      <Configuration>Profile_EnableAsserts</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_EnableAsserts|x64">
+      <Configuration>Profile_EnableAsserts</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile(StaticCRT)|Win32">
+      <Configuration>Profile(StaticCRT)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile(StaticCRT)|x64">
+      <Configuration>Profile(StaticCRT)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile(StaticCRT)_EnableAsserts|Win32">
+      <Configuration>Profile(StaticCRT)_EnableAsserts</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile(StaticCRT)_EnableAsserts|x64">
+      <Configuration>Profile(StaticCRT)_EnableAsserts</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(StaticCRT)|Win32">
+      <Configuration>Release(StaticCRT)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(StaticCRT)|x64">
+      <Configuration>Release(StaticCRT)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{67D2C82F-6E0A-9C9C-BFE4-DF1208937EA5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ambiBIN_genericFX</RootNamespace>
+    <ProjectName>ambiBIN_genericFX</ProjectName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(StaticCRT)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(StaticCRT)|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)_EnableAsserts|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)_EnableAsserts|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(StaticCRT)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(StaticCRT)|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/Debug_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/Debug_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug(StaticCRT)|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/Debug_StaticCRT_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug(StaticCRT)|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/Debug_StaticCRT_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_StaticCRT_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_StaticCRT_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)_EnableAsserts|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_StaticCRT_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)_EnableAsserts|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_StaticCRT_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release(StaticCRT)|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_StaticCRT_vc160.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release(StaticCRT)|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../SDK/source/Build/PropertySheets/Win32/NDebug_StaticCRT_vc160.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Debug\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Debug\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Debug\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Debug\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(StaticCRT)|Win32'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Debug(StaticCRT)\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Debug(StaticCRT)\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(StaticCRT)|x64'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Debug(StaticCRT)\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Debug(StaticCRT)\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Profile\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Profile\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Profile\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Profile\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Win32'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Profile_EnableAsserts\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Profile_EnableAsserts\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|x64'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Profile_EnableAsserts\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Profile_EnableAsserts\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)|Win32'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Profile(StaticCRT)\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Profile(StaticCRT)\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)|x64'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Profile(StaticCRT)\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Profile(StaticCRT)\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)_EnableAsserts|Win32'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Profile(StaticCRT)_EnableAsserts\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Profile(StaticCRT)_EnableAsserts\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)_EnableAsserts|x64'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Profile(StaticCRT)_EnableAsserts\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Profile(StaticCRT)_EnableAsserts\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Release\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Release\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Release\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Release\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(StaticCRT)|Win32'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Release(StaticCRT)\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Release(StaticCRT)\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(StaticCRT)|x64'">
+    <OutDir>..\..\..\..\SDK\$(Platform)_vc160\Release(StaticCRT)\lib\</OutDir>
+    <IntDir>..\..\..\..\SDK\$(Platform)_vc160\Release(StaticCRT)\obj\$(ProjectName)\</IntDir>
+    <TargetName>ambiBIN_genericFX</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug(StaticCRT)|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug(StaticCRT)|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_DEBUG;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_EnableAsserts|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)_EnableAsserts|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile(StaticCRT)_EnableAsserts|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_ENABLE_ASSERTS;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(StaticCRT)|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;WIN32;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(StaticCRT)|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/d2FH4- %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;AK_OPTIMIZED;WIN64;WIN32_LEAN_AND_MEAN;SAF_USE_INTEL_MKL=1;SAF_ENABLE_SOFA_READER_MODULE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\SDK\include;..\Spatial_Audio_Framework\dependencies\Win64\include;..\Spatial_Audio_Framework\examples\include;..\Spatial_Audio_Framework\framework\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>saf_mkl_custom.lib;netcdf.lib;libszip.lib;libzlib.lib;libhdf5.lib;libhdf5_hl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Spatial_Audio_Framework\dependencies\Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)ambiBIN_genericFX.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/d2:-FH4- %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Spatial_Audio_Framework\examples\include\_common.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\examples\include\ambi_bin.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\examples\src\ambi_bin\ambi_bin_internal.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\include\saf.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_cdf4sap\saf_cdf4sap.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_hoa\saf_hoa.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_hoa\saf_hoa_internal.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_hrir\saf_hrir.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_hrir\saf_hrir_internal.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_reverb\saf_reverb.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_reverb\saf_reverb_internal.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_sh\saf_sh.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_sh\saf_sh_internal.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_sofa_reader\saf_sofa_reader.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utilities.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_bessel.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_complex.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_decor.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_error.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_fft.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_filters.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_geometry.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_latticeCoeffs.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_loudspeaker_presets.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_matrixConv.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_misc.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_pitch.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_qmf.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_sensorarray_presets.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_sort.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_veclib.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_vbap\saf_vbap.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\modules\saf_vbap\saf_vbap_internal.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\afSTFT\afSTFT_internal.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\afSTFT\afSTFT_protoFilter.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\afSTFT\afSTFTlib.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\convhull_3d\convhull_3d.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\kissFFT\_kiss_fft_guts.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\kissFFT\kiss_fft.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\kissFFT\kiss_fftr.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\common.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\fastest_coeffs.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\high_qual_coeffs.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\mid_qual_coeffs.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\samplerate.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\samplerate_interface.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\src_config.h" />
+    <ClInclude Include="..\Spatial_Audio_Framework\framework\resources\md_malloc\md_malloc.h" />
+    <ClInclude Include="..\ambiBIN_genericConfig.h" />
+    <ClInclude Include="ambiBIN_genericFX.h" />
+    <ClInclude Include="ambiBIN_genericFXParams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Spatial_Audio_Framework\examples\src\ambi_bin\ambi_bin.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\examples\src\ambi_bin\ambi_bin_internal.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_cdf4sap\saf_cdf4sap.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_hoa\saf_hoa.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_hoa\saf_hoa_internal.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_hrir\saf_default_hrirs.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_hrir\saf_hrir.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_hrir\saf_hrir_internal.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_reverb\saf_reverb.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_reverb\saf_reverb_internal.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_sh\saf_sh.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_sh\saf_sh_internal.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_sofa_reader\saf_sofa_reader.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_bessel.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_complex.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_decor.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_error.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_fft.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_filters.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_geometry.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_latticeCoeffs.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_loudspeaker_presets.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_matrixConv.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_misc.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_pitch.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_qmf.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_sensorarray_presets.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_sort.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_utilities\saf_utility_veclib.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_vbap\saf_vbap.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\modules\saf_vbap\saf_vbap_internal.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\afSTFT\afSTFT_internal.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\afSTFT\afSTFTlib.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\convhull_3d\convhull_3d.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\kissFFT\kiss_fft.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\kissFFT\kiss_fftr.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\samplerate.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\samplerate_interface.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\src_linear.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\src_sinc.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\libsamplerate\src_zoh.c" />
+    <ClCompile Include="..\Spatial_Audio_Framework\framework\resources\md_malloc\md_malloc.c" />
+    <ClCompile Include="ambiBIN_genericFX.cpp" />
+    <ClCompile Include="ambiBIN_genericFXParams.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+The content of this file includes portions of the AUDIOKINETIC Wwise Technology
+released in source code form as part of the SDK installer package.
+
+Commercial License Usage
+
+Licensees holding valid commercial licenses to the AUDIOKINETIC Wwise Technology
+may use this file in accordance with the end user license agreement provided
+with the software or, alternatively, in accordance with the terms contained in a
+written agreement between you and Audiokinetic Inc.
+
+Apache License Usage
+
+Alternatively, this file may be used under the Apache License, Version 2.0 (the
+"Apache License"); you may not use this file except in compliance with the
+Apache License. You may obtain a copy of the Apache License at
+http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
+the specific language governing permissions and limitations under the License.
+
+  Copyright (c) 2020 Audiokinetic Inc.
+-->
+<!--
+See https://www.audiokinetic.com/library/edge/?source=SDK&id=plugin__xml.html
+for the documentation about the plugin xml format
+-->
+<PluginModule>
+  <EffectPlugin Name="ambiBIN_generic" CompanyID="64" PluginID="1">
+    <PluginInfo>
+      <PlatformSupport>
+        <Platform Name="Any">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+          <CanBeRendered>true</CanBeRendered>
+        </Platform>
+      </PlatformSupport>
+    </PluginInfo>
+    <Properties>
+      <!-- Add your property definitions here -->
+		
+      <Property Name="s_yaw" Type="Real32" SupportRTPCType="Exclusive" DisplayName="Yaw">
+        <UserInterface Step="0.1" Fine="0.1" Decimals="1" UIMin="-180" UIMax="180" />
+        <DefaultValue>0.0</DefaultValue>
+        <AudioEnginePropertyID>0</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-180</Min>
+              <Max>180</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+	  
+	        <Property Name="s_pitch" Type="Real32" SupportRTPCType="Exclusive" DisplayName="Pitch">
+        <UserInterface Step="0.1" Fine="0.1" Decimals="1" UIMin="-180" UIMax="180" />
+        <DefaultValue>0.0</DefaultValue>
+        <AudioEnginePropertyID>1</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-180</Min>
+              <Max>180</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+	  
+	        <Property Name="s_roll" Type="Real32" SupportRTPCType="Exclusive" DisplayName="Roll">
+        <UserInterface Step="0.1" Fine="0.1" Decimals="1" UIMin="-180" UIMax="180" />
+        <DefaultValue>0.0</DefaultValue>
+        <AudioEnginePropertyID>2</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-180</Min>
+              <Max>180</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+	  
+	  	     <Property Name="b_bFlipYaw" Type="bool" SupportRTPCType="Exclusive" DisplayName="FlipYaw">
+        <DefaultValue>false</DefaultValue>
+        <AudioEnginePropertyID>3</AudioEnginePropertyID>
+      </Property>
+	  
+	  	  	 <Property Name="b_bFlipPitch" Type="bool" SupportRTPCType="Exclusive" DisplayName="FlipPitch">
+        <DefaultValue>false</DefaultValue>
+        <AudioEnginePropertyID>4</AudioEnginePropertyID>
+      </Property>
+	  
+	  	  	  	 <Property Name="b_bFlipRoll" Type="bool" SupportRTPCType="Exclusive" DisplayName="FlipRoll">
+        <DefaultValue>false</DefaultValue>
+        <AudioEnginePropertyID>5</AudioEnginePropertyID>
+      </Property>
+	  
+	  	  	  	 <Property Name="b_useDefaultHRIRsFLAG" Type="bool" SupportRTPCType="Exclusive" DisplayName="Use Default HRIR set">
+        <DefaultValue>true</DefaultValue>
+        <AudioEnginePropertyID>6</AudioEnginePropertyID>
+      </Property>
+	  
+	  	  	  	 <Property Name="b_enableMaxRE" Type="bool" SupportRTPCType="Exclusive" DisplayName="Apply MaxRE Weights">
+        <DefaultValue>true</DefaultValue>
+        <AudioEnginePropertyID>7</AudioEnginePropertyID>
+      </Property>
+	  
+	  	  	  	 <Property Name="b_enableDiffuseMatching" Type="bool" SupportRTPCType="Exclusive" DisplayName="Diffuse Correction">
+        <DefaultValue>false</DefaultValue>
+        <AudioEnginePropertyID>8</AudioEnginePropertyID>
+      </Property>
+	  
+	  	  	  	 <Property Name="b_enablePhaseWarping" Type="bool" SupportRTPCType="Exclusive" DisplayName="Apply Phase Warping">
+        <DefaultValue>false</DefaultValue>
+        <AudioEnginePropertyID>9</AudioEnginePropertyID>
+      </Property>
+	  
+	  	  	  	 <Property Name="b_enableRotation" Type="bool" SupportRTPCType="Exclusive" DisplayName="Rotation Enable">
+        <DefaultValue>true</DefaultValue>
+        <AudioEnginePropertyID>10</AudioEnginePropertyID>
+      </Property>
+	  
+	  	  	  	 <Property Name="b_useRollPitchYawFlag" Type="bool" SupportRTPCType="Exclusive" DisplayName="R-P-Y">
+        <DefaultValue>false</DefaultValue>
+        <AudioEnginePropertyID>11</AudioEnginePropertyID>
+      </Property>
+	  
+	 <Property Name="e_SH_ORDERS" Type="int32" DisplayName="Decoding Order">
+	        <DefaultValue>1</DefaultValue>
+	        <AudioEnginePropertyID>12</AudioEnginePropertyID>
+			  <Restrictions>
+			    <ValueRestriction>
+			        <Enumeration Type="int32">
+			            <Value DisplayName="First-order">1</Value>
+			            <Value DisplayName="Second-order">2</Value>
+			            <Value DisplayName="Third-order">3</Value>
+			            <Value DisplayName="Fourth-order">4</Value>
+			            <Value DisplayName="Fifth-order">5</Value>
+			            <Value DisplayName="Sixth-order">6</Value>
+			            <Value DisplayName="Seventh-order">7</Value>
+			        </Enumeration>
+			    </ValueRestriction>
+			</Restrictions>
+		</Property> 
+	
+		<Property Name="e_AMBI_BIN_DECODING_METHODS" Type="int32" DisplayName="Method">
+	        <DefaultValue>1</DefaultValue>
+	        <AudioEnginePropertyID>13</AudioEnginePropertyID>
+			  <Restrictions>
+			    <ValueRestriction>
+			        <Enumeration Type="int32">
+			            <Value DisplayName="Least-Squares (LS)">1</Value>
+			            <Value DisplayName="LS with Diffuse-EQ">2</Value>
+			            <Value DisplayName="Spatial Resampling (SPR)">3</Value>
+			            <Value DisplayName="Time-alignment (TA)">4</Value>
+			            <Value DisplayName="Magnitude-LS">5</Value>
+			        </Enumeration>
+			    </ValueRestriction>
+			</Restrictions>
+		</Property> 
+		
+		<Property Name=" e_CH_ORDER" Type="int32" DisplayName="Format Channel Ordering">
+	        <DefaultValue>1</DefaultValue>
+	        <AudioEnginePropertyID>14</AudioEnginePropertyID>
+			  <Restrictions>
+			    <ValueRestriction>
+			        <Enumeration Type="int32">
+			            <Value DisplayName="ACN">1</Value>
+			            <Value DisplayName="FUMA">2</Value>
+			        </Enumeration>
+			    </ValueRestriction>
+			</Restrictions>
+		</Property> 
+		
+		<Property Name="e_NORM_TYPES" Type="int32" DisplayName="Format Normalisation Scheme">
+	        <DefaultValue>1</DefaultValue>
+	        <AudioEnginePropertyID>15</AudioEnginePropertyID>
+			  <Restrictions>
+			    <ValueRestriction>
+			        <Enumeration Type="int32">
+			            <Value DisplayName="Orthonormalised (N3D)">1</Value>
+			            <Value DisplayName="Schmidt semi-normalisation (SN3D)">2</Value>
+			            <Value DisplayName="(Legacy) Furse-Malham scaling">3</Value>
+			        </Enumeration>
+			    </ValueRestriction>
+			</Restrictions>
+		</Property>
+		
+    </Properties>
+  </EffectPlugin>
+</PluginModule>

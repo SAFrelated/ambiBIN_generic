@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Spatial_Audio_Framework">
+      <UniqueIdentifier>{3C8C266B-289C-D23B-9155-375A7D84C1D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\examples">
+      <UniqueIdentifier>{6A5D14A8-D616-7F52-5F76-992CCB2E35C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spatial_Audio_Framework\examples\include">
+      <UniqueIdentifier>{DD4E35E7-49B4-C86D-D28C-6A463EF1BDDC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Spatial_Audio_Framework\examples\include\_common.h">
+      <Filter>Spatial_Audio_Framework\examples\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Spatial_Audio_Framework\examples\include\ambi_bin.h">
+      <Filter>Spatial_Audio_Framework\examples\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ambiBIN_genericConfig.h">
+    </ClInclude>
+    <ClInclude Include="ambiBIN_generic.h" />
+    <ClInclude Include="ambiBIN_genericPlugin.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ambiBIN_generic.cpp" />
+    <ClCompile Include="ambiBIN_genericPlugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ambiBIN_generic.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ambiBIN_generic.xml" />
+  </ItemGroup>
+</Project>
